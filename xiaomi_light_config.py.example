@@ -1,0 +1,32 @@
+# -*- coding: utf-8 -*-
+"""
+米家智能灯配置模板
+
+复制此文件为 config.py 并填写你的设备信息
+
+获取Token方法:
+1. Xiaomi Cloud Tokens Extractor: https://github.com/PiotrMachowski/Xiaomi-cloud-tokens-extractor
+2. Mi Home App (版本5.4.54): 设备 → 关于 → 连续点击版本号 → Hub info
+3. Home Assistant .storage/core.config_entries
+"""
+
+# ============== 设备配置 ==============
+CONFIG = {
+    # 设备IP
+    "ip": "192.168.2.17",
+
+    # 设备Token (32字符十六进制)
+    "token": "your_token_here",
+}
+
+# ============== MIoT siid/piid 定义 ==============
+# 注意: 不同设备的siid/piid可能不同
+# 常用:
+#   电源: (2, 1)
+#   亮度: (2, 2)
+#   色温: (2, 3)
+PROPERTIES = {
+    "power": (2, 1),
+    "brightness": (2, 2),
+    "color_temp": (2, 3),
+}

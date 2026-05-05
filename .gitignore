@@ -1,0 +1,6 @@
+.DS_Store
+__pycache__/
+*.pyc
+xiaomi_light_config.py
+esp32_debug.log
+.claude/
